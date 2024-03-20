@@ -1,0 +1,735 @@
+[
+  {
+    "id": 70,
+    "date": "2024-02-28T09:57:23",
+    "date_gmt": "2024-02-28T06:57:23",
+    "guid": { "rendered": "http://fictional-university.local/?page_id=70" },
+    "modified": "2024-02-28T09:57:23",
+    "modified_gmt": "2024-02-28T06:57:23",
+    "slug": "past-events",
+    "status": "publish",
+    "type": "page",
+    "link": "http://fictional-university.local/past-events/",
+    "title": { "rendered": "Past Events" },
+    "content": { "rendered": "", "protected": false },
+    "excerpt": { "rendered": "", "protected": false },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_acf_changed": false, "footnotes": "" },
+    "acf": { "page_banner_subtitle": "", "page_banner_background_image": null },
+    "_links": {
+      "self": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages/70" }
+      ],
+      "collection": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/comments?post=70"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/70/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 71,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/70/revisions/71"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://fictional-university.local/wp-json/wp/v2/media?parent=70"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "date": "2024-01-31T09:12:14",
+    "date_gmt": "2024-01-31T09:12:14",
+    "guid": { "rendered": "http://fictional-university.local/?page_id=38" },
+    "modified": "2024-01-31T09:12:14",
+    "modified_gmt": "2024-01-31T09:12:14",
+    "slug": "blog",
+    "status": "publish",
+    "type": "page",
+    "link": "http://fictional-university.local/blog/",
+    "title": { "rendered": "Blog" },
+    "content": { "rendered": "", "protected": false },
+    "excerpt": { "rendered": "", "protected": false },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_acf_changed": false, "footnotes": "" },
+    "acf": { "page_banner_subtitle": "", "page_banner_background_image": null },
+    "_links": {
+      "self": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages/38" }
+      ],
+      "collection": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/comments?post=38"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/38/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 39,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/38/revisions/39"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://fictional-university.local/wp-json/wp/v2/media?parent=38"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "date": "2024-01-31T09:12:02",
+    "date_gmt": "2024-01-31T09:12:02",
+    "guid": { "rendered": "http://fictional-university.local/?page_id=36" },
+    "modified": "2024-02-20T17:29:03",
+    "modified_gmt": "2024-02-20T14:29:03",
+    "slug": "home",
+    "status": "publish",
+    "type": "page",
+    "link": "http://fictional-university.local/",
+    "title": { "rendered": "Home" },
+    "content": {
+      "rendered": "\n<p></p>\n\n\n\n<figure class=\"wp-block-image size-large\"><img loading=\"lazy\" decoding=\"async\" width=\"1024\" height=\"1024\" src=\"http://fictional-university.local/wp-content/uploads/2024/02/IMG_0240-1024x1024.jpg\" alt=\"This is the Home page\" class=\"wp-image-43\" srcset=\"http://fictional-university.local/wp-content/uploads/2024/02/IMG_0240-1024x1024.jpg 1024w, http://fictional-university.local/wp-content/uploads/2024/02/IMG_0240-300x300.jpg 300w, http://fictional-university.local/wp-content/uploads/2024/02/IMG_0240-150x150.jpg 150w, http://fictional-university.local/wp-content/uploads/2024/02/IMG_0240-768x768.jpg 768w, http://fictional-university.local/wp-content/uploads/2024/02/IMG_0240-1536x1536.jpg 1536w, http://fictional-university.local/wp-content/uploads/2024/02/IMG_0240-2048x2048.jpg 2048w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" /></figure>\n\n\n\n<p>This is how the home page works</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>This is how the home page works</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_acf_changed": false, "footnotes": "" },
+    "acf": { "page_banner_subtitle": "", "page_banner_background_image": null },
+    "_links": {
+      "self": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages/36" }
+      ],
+      "collection": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/comments?post=36"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/36/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 48,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/36/revisions/48"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://fictional-university.local/wp-json/wp/v2/media?parent=36"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "date": "2024-01-30T06:56:14",
+    "date_gmt": "2024-01-30T06:56:14",
+    "guid": { "rendered": "http://fictional-university.local/?page_id=21" },
+    "modified": "2024-01-30T06:56:14",
+    "modified_gmt": "2024-01-30T06:56:14",
+    "slug": "cookie-policy",
+    "status": "publish",
+    "type": "page",
+    "link": "http://fictional-university.local/privacy-policy/cookie-policy/",
+    "title": { "rendered": "Cookie Policy" },
+    "content": {
+      "rendered": "\n<p>Fictional University Cookie Policy:</p>\n\n\n\n<p>At Fictional University, we use cookies to enhance your browsing experience. Cookies are small text files stored on your device that help analyze website traffic and optimize performance. By consenting to our cookie usage, you agree to our privacy policy. We utilize both essential cookies, necessary for site functionality, and analytical cookies, providing insights into user behavior. These insights aid in improving our content and services. You have the option to manage cookie preferences through your browser settings. Please note that restricting cookies may impact certain features. By continuing to use our website, you acknowledge our Cookie Policy and Privacy Policy.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Fictional University Cookie Policy: At Fictional University, we use cookies to enhance your browsing experience. Cookies are small text files stored on your device that help analyze website traffic and optimize performance. By consenting to our cookie usage, you agree to our privacy policy. We utilize both essential cookies, necessary for site functionality, and analytical [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 3,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_acf_changed": false, "footnotes": "" },
+    "acf": { "page_banner_subtitle": "", "page_banner_background_image": null },
+    "_links": {
+      "self": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages/21" }
+      ],
+      "collection": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/comments?post=21"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/21/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 22,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/21/revisions/22"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/3"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://fictional-university.local/wp-json/wp/v2/media?parent=21"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "date": "2024-01-29T16:21:58",
+    "date_gmt": "2024-01-29T16:21:58",
+    "guid": { "rendered": "http://fictional-university.local/?page_id=19" },
+    "modified": "2024-01-30T09:35:38",
+    "modified_gmt": "2024-01-30T09:35:38",
+    "slug": "our-goals",
+    "status": "publish",
+    "type": "page",
+    "link": "http://fictional-university.local/about-us/our-goals/",
+    "title": { "rendered": "Our Goals" },
+    "content": {
+      "rendered": "\n<p>At Fictional University, our goals are a testament to a commitment to academic excellence and holistic development. We aspire to cultivate a dynamic learning environment where students engage with cutting-edge curriculum and innovative teaching methodologies. Our primary objective is to foster critical thinking, creativity, and problem-solving skills, preparing students for the challenges of a rapidly evolving world. Fictional University is dedicated to promoting inclusivity, diversity, and global awareness, ensuring a rich tapestry of perspectives within our academic community. With a focus on research and real-world applications, our goals revolve around empowering individuals to make meaningful contributions to society, shaping a brighter, more enlightened future.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>At Fictional University, our goals are a testament to a commitment to academic excellence and holistic development. We aspire to cultivate a dynamic learning environment where students engage with cutting-edge curriculum and innovative teaching methodologies. Our primary objective is to foster critical thinking, creativity, and problem-solving skills, preparing students for the challenges of a rapidly [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 14,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_acf_changed": false, "footnotes": "" },
+    "acf": { "page_banner_subtitle": "", "page_banner_background_image": null },
+    "_links": {
+      "self": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages/19" }
+      ],
+      "collection": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/comments?post=19"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/19/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 20,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/19/revisions/20"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/14"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://fictional-university.local/wp-json/wp/v2/media?parent=19"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "date": "2024-01-29T16:13:54",
+    "date_gmt": "2024-01-29T16:13:54",
+    "guid": { "rendered": "http://fictional-university.local/?page_id=17" },
+    "modified": "2024-01-30T09:37:19",
+    "modified_gmt": "2024-01-30T09:37:19",
+    "slug": "our-history",
+    "status": "publish",
+    "type": "page",
+    "link": "http://fictional-university.local/about-us/our-history/",
+    "title": { "rendered": "Our History" },
+    "content": {
+      "rendered": "\n<p>Founded in 1920, Fictional University emerged as a beacon of educational enlightenment. Originating from a visionary group of scholars, it began as a humble institution dedicated to fostering intellectual curiosity. Over the decades, our commitment to excellence propelled us forward, expanding our academic horizons. In the 1960s, Fictional University witnessed a transformative era, embracing diversity and inclusivity. The campus evolved into a hub of innovation, reflecting societal changes and technological advancements. Today, Fictional University stands as a testament to resilience and progress, nurturing generations of forward-thinkers. Our imaginary history echoes a legacy of academic brilliance, shaping a future where knowledge knows no bounds.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Founded in 1920, Fictional University emerged as a beacon of educational enlightenment. Originating from a visionary group of scholars, it began as a humble institution dedicated to fostering intellectual curiosity. Over the decades, our commitment to excellence propelled us forward, expanding our academic horizons. In the 1960s, Fictional University witnessed a transformative era, embracing diversity [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 14,
+    "menu_order": 1,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_acf_changed": false, "footnotes": "" },
+    "acf": { "page_banner_subtitle": "", "page_banner_background_image": null },
+    "_links": {
+      "self": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages/17" }
+      ],
+      "collection": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/comments?post=17"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/17/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 18,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/17/revisions/18"
+        }
+      ],
+      "up": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/14"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://fictional-university.local/wp-json/wp/v2/media?parent=17"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "date": "2024-01-29T12:58:03",
+    "date_gmt": "2024-01-29T12:58:03",
+    "guid": { "rendered": "http://fictional-university.local/?page_id=14" },
+    "modified": "2024-03-07T13:14:40",
+    "modified_gmt": "2024-03-07T10:14:40",
+    "slug": "about-us",
+    "status": "publish",
+    "type": "page",
+    "link": "http://fictional-university.local/about-us/",
+    "title": { "rendered": "About Us" },
+    "content": {
+      "rendered": "\n<p>Welcome to Fictional University, where academic excellence meets limitless possibilities. As a premier institution, we take pride in fostering a vibrant learning community dedicated to intellectual growth and personal development. Our distinguished faculty members, experts in English, Math, and Biology, are committed to cultivating critical thinking and instilling a passion for knowledge. At Fictional University, we offer a diverse range of courses and degree programs, ensuring a well-rounded education that prepares students for success in their chosen fields. Join us on a journey of discovery, innovation, and academic achievement. Your future begins here, at Fictional University \u2013 where education transcends boundaries.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Welcome to Fictional University, where academic excellence meets limitless possibilities. As a premier institution, we take pride in fostering a vibrant learning community dedicated to intellectual growth and personal development. Our distinguished faculty members, experts in English, Math, and Biology, are committed to cultivating critical thinking and instilling a passion for knowledge. At Fictional University, [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_acf_changed": false, "footnotes": "" },
+    "acf": {
+      "page_banner_subtitle": "We are a great school that has been around for a long time.",
+      "page_banner_background_image": 99
+    },
+    "_links": {
+      "self": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages/14" }
+      ],
+      "collection": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/comments?post=14"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/14/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 101,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/14/revisions/101"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://fictional-university.local/wp-json/wp/v2/media?parent=14"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "date": "2024-01-29T08:05:14",
+    "date_gmt": "2024-01-29T08:05:14",
+    "guid": { "rendered": "http://fictional-university.local/?page_id=12" },
+    "modified": "2024-01-29T08:05:14",
+    "modified_gmt": "2024-01-29T08:05:14",
+    "slug": "test-page-456",
+    "status": "publish",
+    "type": "page",
+    "link": "http://fictional-university.local/test-page-456/",
+    "title": { "rendered": "Test Page 456" },
+    "content": {
+      "rendered": "\n<p>Fusce lacus velit, pulvinar eu malesuada vel, fringilla semper nibh. Donec dictum sit amet est eu viverra. Sed quis metus ultricies, ornare ante in, consequat elit. Sed tempus risus nisi, sed placerat arcu mollis at. Donec facilisis leo sed erat facilisis, vel fringilla ligula malesuada. Nullam ante ligula, elementum sit amet nunc quis, pulvinar ultricies arcu. Curabitur id nunc nec enim luctus convallis a in nisl. Cras efficitur orci eget enim varius, et mattis leo vehicula. Proin metus massa, pellentesque nec odio nec, scelerisque auctor lectus.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Fusce lacus velit, pulvinar eu malesuada vel, fringilla semper nibh. Donec dictum sit amet est eu viverra. Sed quis metus ultricies, ornare ante in, consequat elit. Sed tempus risus nisi, sed placerat arcu mollis at. Donec facilisis leo sed erat facilisis, vel fringilla ligula malesuada. Nullam ante ligula, elementum sit amet nunc quis, pulvinar ultricies [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": { "_acf_changed": false, "footnotes": "" },
+    "acf": { "page_banner_subtitle": "", "page_banner_background_image": null },
+    "_links": {
+      "self": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages/12" }
+      ],
+      "collection": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/comments?post=12"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/12/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 13,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/12/revisions/13"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://fictional-university.local/wp-json/wp/v2/media?parent=12"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "date": "2024-01-27T18:54:03",
+    "date_gmt": "2024-01-27T18:54:03",
+    "guid": { "rendered": "http://fictional-university.local/?page_id=3" },
+    "modified": "2024-01-29T12:58:37",
+    "modified_gmt": "2024-01-29T12:58:37",
+    "slug": "privacy-policy",
+    "status": "publish",
+    "type": "page",
+    "link": "http://fictional-university.local/privacy-policy/",
+    "title": { "rendered": "Privacy Policy" },
+    "content": {
+      "rendered": "<h2 class=\"wp-block-heading\">Who we are</h2><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>Our website address is: http://fictional-university.local.</p><h2 class=\"wp-block-heading\">Comments</h2><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><h2 class=\"wp-block-heading\">Media</h2><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><h2 class=\"wp-block-heading\">Cookies</h2><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><h2 class=\"wp-block-heading\">Embedded content from other websites</h2><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><h2 class=\"wp-block-heading\">Who we share your data with</h2><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you request a password reset, your IP address will be included in the reset email.</p><h2 class=\"wp-block-heading\">How long we retain your data</h2><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><h2 class=\"wp-block-heading\">What rights you have over your data</h2><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><h2 class=\"wp-block-heading\">Where your data is sent</h2><p><strong class=\"privacy-policy-tutorial\">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Who we are Suggested text: Our website address is: http://fictional-university.local. Comments Suggested text: When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection. An anonymized string created from your email address (also called a [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "template": "",
+    "meta": { "_acf_changed": false, "footnotes": "" },
+    "acf": { "page_banner_subtitle": "", "page_banner_background_image": null },
+    "_links": {
+      "self": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages/3" }
+      ],
+      "collection": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/comments?post=3"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/3/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 16,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/3/revisions/16"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://fictional-university.local/wp-json/wp/v2/media?parent=3"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "date": "2024-01-27T18:54:03",
+    "date_gmt": "2024-01-27T18:54:03",
+    "guid": { "rendered": "http://fictional-university.local/?page_id=2" },
+    "modified": "2024-01-27T18:54:03",
+    "modified_gmt": "2024-01-27T18:54:03",
+    "slug": "sample-page",
+    "status": "publish",
+    "type": "page",
+    "link": "http://fictional-university.local/sample-page/",
+    "title": { "rendered": "Sample Page" },
+    "content": {
+      "rendered": "\n<p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>\n\n\n\n<blockquote class=\"wp-block-quote\"><p>Hi there! I&#8217;m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin&#8217; caught in the rain.)</p></blockquote>\n\n\n\n<p>&#8230;or something like this:</p>\n\n\n\n<blockquote class=\"wp-block-quote\"><p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p></blockquote>\n\n\n\n<p>As a new WordPress user, you should go to <a href=\"http://fictional-university.local/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this: Hi there! I&#8217;m a bike messenger [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "template": "",
+    "meta": { "_acf_changed": false, "footnotes": "" },
+    "acf": { "page_banner_subtitle": "", "page_banner_background_image": null },
+    "_links": {
+      "self": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages/2" }
+      ],
+      "collection": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/pages" }
+      ],
+      "about": [
+        { "href": "http://fictional-university.local/wp-json/wp/v2/types/page" }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://fictional-university.local/wp-json/wp/v2/comments?post=2"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://fictional-university.local/wp-json/wp/v2/pages/2/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://fictional-university.local/wp-json/wp/v2/media?parent=2"
+        }
+      ],
+      "curies": [
+        { "name": "wp", "href": "https://api.w.org/{rel}", "templated": true }
+      ]
+    }
+  }
+]
