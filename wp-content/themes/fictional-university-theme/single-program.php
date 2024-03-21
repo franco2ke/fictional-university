@@ -16,7 +16,7 @@ while (have_posts()) {
         <span class="metabox__main"> <?php the_title(); ?></span>
       </p>
     </div>
-    <div class="generic-content"><?php the_content(); ?></div>
+    <div class="generic-content"><?php the_field('main_body_content') ?></div>
 
     <?php
     // List professors who teach the current subject
@@ -52,7 +52,11 @@ while (have_posts()) {
             <span class="professor-card__name"><?php the_title(); ?></span>
           </a>
         </li>
+
       <?php
+        /* echo "<pre>";
+        print_r($post);
+        echo "</pre>"; */
       };
       echo '</ul>';
     };
@@ -81,7 +85,7 @@ while (have_posts()) {
         array(
           'key' => 'related_programs', //related program is an object therefore stored in a serialized manner in database
           'compare' => 'LIKE', // search for value in key of serialized object / data
-          'value' => '"' . get_the_ID() . '"' // ID of current program
+          'value' => '"' . get_the_ID() . '"' // ID of current program, WP stores serialized values within double quotes in DB
         )
       ),
     ));

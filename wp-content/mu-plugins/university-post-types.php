@@ -39,7 +39,7 @@ function university_post_types()
 
   // Program Post Type
   register_post_type('program', array(
-    'supports' => array('title', 'editor'),
+    'supports' => array('title'),
     'rewrite' => array('slug' => 'programs'), // rewrite the url slug /program/ -> /programs/
     'has_archive' => true, // supports archive template
     'public' => true, // post type visible to editors and authors of the website
