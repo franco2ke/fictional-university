@@ -1,5 +1,5 @@
 <?php
-// Register custom route for search
+// Register custom api route for search
 add_action('rest_api_init', 'universityRegisterSearch');
 
 function universityRegisterSearch()
@@ -20,7 +20,7 @@ function universitySearchResults($data)
 
   // initialize empty array for each post type
   $results = [
-    'generalInfo' => array(),
+    'generalInfo' => array(), // for posts and pages
     'professors' => array(),
     'programs' => array(),
     'events' => array(),
@@ -104,13 +104,35 @@ function universitySearchResults($data)
     }
 
     $programRelationshipQuery = new WP_Query(array(
-      'post_type' => 'professor',
+      'post_type' => array('professor', 'event'),
       'meta_query' => $programsMetaQuery,
     ));
 
     // push professors teaching programs to professor results array
     while ($programRelationshipQuery->have_posts()) {
       $programRelationshipQuery->the_post();
+
+      // populate event array with 'event' post-type
+      if (get_post_type() == 'event') {
+        // get event date
+        $eventDate = new DateTime(get_field('event_date'));
+        // get description
+        $description = null;
+
+        if (has_excerpt()) { // if post has handcrafted excerpt
+          $description = get_the_excerpt() . '...';
+        } else {
+          $description = wp_trim_words(get_the_content(), 18); // get the first 18 words of the content
+        };
+
+        array_push($results['events'], array(
+          'title' => get_the_title(),
+          'permalink' => get_the_permalink(),
+          'month' => $eventDate->format('M'),
+          'day' => $eventDate->format('d'),
+          'description' => $description,
+        ));
+      }
 
       // populate professor array with 'professor' post-type
       if (get_post_type() == 'professor') {
@@ -124,6 +146,8 @@ function universitySearchResults($data)
 
     // remove duplicates in professor results array, and return array_values only, not key,val pairs
     $results['professors'] = array_values(array_unique($results['professors'], SORT_REGULAR));
+    // remove duplicates in events results array, and return array_values, not numerical key,val pairs
+    $results['events'] = array_values(array_unique($results['events'], SORT_REGULAR));
   }
   // WordPress automatically converts PHP data into JSON data structures when serving API requests.
   return $results;
