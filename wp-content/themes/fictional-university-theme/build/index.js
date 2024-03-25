@@ -239,6 +239,7 @@ class Search {
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("body").addClass("body-no-scroll");
     // manage state
     this.isOverlayOpen = true;
+    return false; // like e.preventDefault()
   }
   closeOverlay() {
     this.searchOverlay.removeClass("search-overlay--active");

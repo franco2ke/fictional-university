@@ -53,6 +53,21 @@ function universitySearchResults($data)
 
     // populate program array with 'program' post-type
     if (get_post_type() == 'program') {
+
+      $relatedCampuses = get_field('related_campus');
+      // iterate through campuses and obtain, campus title and permalink
+      if ($relatedCampuses) { // only run if a campus(es) exist
+        foreach ($relatedCampuses as $campus) {
+          // add on to campuses results
+          array_push($results['campuses'], array(
+            'title' => get_the_title($campus), // the post template tags usually accept a post object or ID
+            'permalink' => get_the_permalink($campus->ID),
+          ));
+        }
+      }
+
+      // remove duplicates from campus results
+
       array_push($results['programs'], array(
         'title' => get_the_title(),
         'permalink' => get_the_permalink(),

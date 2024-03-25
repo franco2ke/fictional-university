@@ -44,6 +44,8 @@ class Search {
     $("body").addClass("body-no-scroll");
     // manage state
     this.isOverlayOpen = true;
+
+    return false; // like e.preventDefault()
   }
 
   closeOverlay() {
