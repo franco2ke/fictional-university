@@ -69,7 +69,7 @@ function university_files()
   // make php variable available to frontend js, via inline script
   wp_localize_script('main-university-js', 'universityData', array(
     'root_url' => get_site_url(),
-    'sky' => 'blue'
+    'nonce' => wp_create_nonce('wp_rest')
   ));
 }
 
