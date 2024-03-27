@@ -14,8 +14,10 @@ wp-content/*
 wp-content/plugins/*
 !wp-content/plugins/manual-image-crop
 
-# Ignore everything in the "themes" directory expect themes you specify
+# Ignore everything in the "themes" directory except themes you specify
 wp-content/themes/*
 !wp-content/themes/fictional-university-theme
+wp-content/themes/fictional-university-theme/build/
 
 node_modules
+.DS_Store
