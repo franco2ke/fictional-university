@@ -19,7 +19,11 @@
 }
 
 .submit-note:hover {
-  background-color: adjust-color($darkOrange, $lightness: -10%, $saturation: -20%);
+  background-color: adjust-color(
+    $darkOrange,
+    $lightness: -10%,
+    $saturation: -20%
+  );
 }
 
 .edit-note,
@@ -129,6 +133,7 @@
 }
 
 /* Reveal and Hide Fade Transitions */
+/* 
 #my-notes {
   position: relative;
 }
@@ -155,3 +160,4 @@
   right: 0;
   opacity: 0;
 }
+*/
