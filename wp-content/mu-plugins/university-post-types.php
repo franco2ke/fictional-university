@@ -6,6 +6,8 @@ function university_post_types()
 {
   // Campus Post Type
   register_post_type('campus', array(
+    'capability_type' => 'campus',
+    'map_meta_cap' => 'true',
     'supports' => array('title', 'editor', 'excerpt'),
     'has_archive' => true, // supports archive template
     'public' => true, // post type visible to editors and authors of the website
@@ -22,6 +24,8 @@ function university_post_types()
 
   // Event Post Type
   register_post_type('event', array(
+    'capability_type' => 'event', // enable event related permissions
+    'map_meta_cap' => true, // map default post permissions to this post type
     'supports' => array('title', 'editor', 'excerpt'),
     'rewrite' => array('slug' => 'events'), // rewrite the url slug /event/ -> /events/
     'has_archive' => true, // supports archive template
