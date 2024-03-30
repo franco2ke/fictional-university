@@ -6,9 +6,11 @@ class MyNotes {
   }
 
   events() {
-    $(".delete-note").on("click", this.deleteNote); // delete the note
-    $(".edit-note").on("click", this.editNote.bind(this)); // edit the note
-    $(".update-note").on("click", this.updateNote.bind(this)); // save note
+    // Add Event Listeners
+    // Use event bubbling to also add event listeners to dynamically rendered notes
+    $("#my-notes").on("click", ".delete-note", this.deleteNote); // delete the note
+    $("#my-notes").on("click", ".edit-note", this.editNote.bind(this)); // edit the note
+    $("#my-notes").on("click", ".update-note", this.updateNote.bind(this)); // save note
     $(".submit-note").on("click", this.createNote.bind(this)); // save note
   }
 
@@ -131,7 +133,15 @@ class MyNotes {
       success: (response) => {
         $(".new-note-title, .new-note-body").val(""); // empty input fields
         // create new note and prepend it to my-notes list
-        $("<li>Imagine real data here</li>")
+        $(`
+        <li data-id="${response.id}">
+          <input readonly class="note-title-field" type="text" value="${response.title.raw}">
+          <span class="edit-note"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</span>
+          <span class="delete-note"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</span>
+          <textarea readonly class="note-body-field" name="" id="" cols="30" rows="10">${response.content.raw}</textarea>
+          <span class="update-note btn btn--blue btn--small"><i class="fa fa-arrow-right" aria-hidden="true"></i> Save</span>
+        </li>
+        `)
           .prependTo("#my-notes")
           .hide()
           .slideDown();
