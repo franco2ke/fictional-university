@@ -197,3 +197,18 @@ function ourLoginTitle()
 {
   return get_bloginfo('name');
 }
+
+// Force new note posts to be private
+// In WP 'filter' can also mean 'modify'
+add_filter('wp_insert_post_data', 'makeNotePrivate');
+
+function makeNotePrivate($data)
+{
+  // only filter the note post type
+  // do nothing if post has been trashed, deleted
+  if ($data['post_type'] == 'note' && $data['post_status'] != 'trash') {
+    $data['post_status'] = 'private';
+  }
+
+  return $data;
+}

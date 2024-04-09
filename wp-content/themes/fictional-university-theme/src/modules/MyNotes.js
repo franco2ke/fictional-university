@@ -131,7 +131,7 @@ class MyNotes {
       type: "POST",
       data: ourNewPost,
       success: (response) => {
-        $(".new-note-title, .new-note-body").val(""); // empty input fields
+        $(".new-note-title, .new-note-body").val(""); // empty the form input fields
         // create new note and prepend it to my-notes list
         $(`
         <li data-id="${response.id}">
