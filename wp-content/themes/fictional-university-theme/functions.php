@@ -2,14 +2,23 @@
 // include additional code as external php file to keep functions.php organized
 require get_theme_file_path('/includes/search-route.php');
 
-// customize fields in JSON returned by WP rest api
+// add custom fields in JSON returned by WP rest api
 function university_custom_rest()
 {
   // create custom field to be returned by rest api for the 'post' post type
+  // returned in addition to the other post types
   register_rest_field('post', 'authorName', array(
     // callback function that returns the value for the new field: 'authorName'
     'get_callback' => function () {
       return get_the_author();
+    }
+  ));
+
+  // add users note count property to returned note object
+  register_rest_field('note', 'userNoteCount', array(
+    // callback function that returns the value for the new field: 'authorName'
+    'get_callback' => function () {
+      return count_user_posts(get_current_user_id(), 'note');
     }
   ));
 }
@@ -198,14 +207,20 @@ function ourLoginTitle()
   return get_bloginfo('name');
 }
 
-// Force new note posts to be private
-// In WP 'filter' can also mean 'modify', intercept post data before its saved into DB
-add_filter('wp_insert_post_data', 'makeNotePrivate');
+// Force new note posts to be private & Sanitize input content
+// In WP 'filter' can also mean 'modify', 
+// the filter intercepts post data before its saved into DB, also runs on Update, Delete
+add_filter('wp_insert_post_data', 'makeNotePrivate', 10, 2);
 
-function makeNotePrivate($data)
+function makeNotePrivate($data, $postarr)
 {
   if ($data['post_type'] == 'note') {
-    // sanitize the content the user submits
+    // Limit creation of notes to 5, but not updating, deletion
+    if (count_user_posts(get_current_user_id(), 'note') > 4 && !$postarr['ID']) {
+      die("You have reached your note limit");
+    }
+
+    // sanitize the title and content the user submits
     $data['post_content'] = sanitize_textarea_field($data['post_content']);
     $data['post_title'] = sanitize_text_field($data['post_title']);
   }
