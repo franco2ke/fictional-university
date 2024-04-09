@@ -154,6 +154,7 @@ class MyNotes {
       },
     });
   }
+
 }
 
 export default MyNotes;
