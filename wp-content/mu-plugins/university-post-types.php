@@ -75,8 +75,10 @@ function university_post_types()
 
   // Note Post Type
   register_post_type('note', array(
+    'capability_type' => 'note', // brand new permissions for this post_type only
+    'map_meta_cap' => 'true', // enforces the new custom permissions
     'show_in_rest' => 'true', // edit via Block Editor instead of classic editor
-    'supports' => array('title', 'editor'),
+    'supports' => array('title', 'editor', 'author'),
     'public' => false, // not visible to editors and authors of the website on dashboard, private to each user
     'show_ui' => true, // show notes in the admin dashboard
     'labels' => array(

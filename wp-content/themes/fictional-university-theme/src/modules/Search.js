@@ -214,7 +214,7 @@ class Search {
       e.keyCode === 83 &&
       !this.isOverlayOpen &&
       // avoid 's' keypress on other on-page inputs opening search overlay
-      !$("input", "textarea").is(":focus")
+      !$("input, textarea").is(":focus")
     ) {
       this.openOverlay();
     }
