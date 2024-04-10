@@ -12,7 +12,47 @@ while (have_posts()) {
     <div class="generic-content">
       <div class="row group">
         <div class="one-third"><?php the_post_thumbnail('professorPortrait'); ?></div>
-        <div class="two-thirds"><?php the_content(); ?></div>
+        <div class="two-thirds">
+          <?php
+          // get like posts of current professor
+          $likeCount = new WP_Query(array(
+            'post_type' => 'like',
+            'meta_query' => array(
+              array(
+                'key' => 'liked_professor_id',
+                'compare' => '=',
+                'value' => get_the_ID()
+              )
+            )
+          ));
+
+          // get like posts of current professor that the current user liked
+          $existStatus = 'no';
+
+          $existQuery = new WP_Query(array(
+            'author' => get_current_user_id(),
+            'post_type' => 'like',
+            'meta_query' => array(
+              array(
+                'key' => 'liked_professor_id',
+                'compare' => '=',
+                'value' => get_the_ID()
+              )
+            )
+          ));
+
+          // toggle the 'data-exists' attribute on the like box, and show if current user likes professor
+          if ($existQuery->found_posts) {
+            $existStatus = 'yes';
+          }
+          ?>
+          <span class="like-box" data-exists="<?php echo $existStatus ?>">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            <span class="like-count"><?php echo $likeCount->found_posts; ?></span>
+          </span>
+          <?php the_content(); ?>
+        </div>
       </div>
 
     </div>
