@@ -1,6 +1,7 @@
 <?php
 // include additional code as external php file to keep functions.php organized
 require get_theme_file_path('/includes/search-route.php');
+require get_theme_file_path('/includes/like-route.php');
 
 // add custom fields in JSON returned by WP rest api
 function university_custom_rest()
