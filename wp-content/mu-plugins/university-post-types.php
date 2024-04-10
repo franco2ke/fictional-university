@@ -90,4 +90,19 @@ function university_post_types()
     ),
     'menu_icon' => 'dashicons-welcome-write-blog', // set the menu icon
   ));
+
+  // Like Post Type , with custom rest api, manual 
+  register_post_type('like', array(
+    'supports' => array('title', 'author'),
+    'public' => false, // not visible to editors and authors of the website on dashboard, private to each user
+    'show_ui' => true, // show likes in the admin dashboard
+    'labels' => array(
+      'name' => 'Likes', // set the admin sidebar label name
+      'add_new' => 'Add New Like',
+      'edit_item' => 'Edit Like',
+      'all_items' => 'All Likes',
+      'singular_name' => 'Like'
+    ),
+    'menu_icon' => 'dashicons-heart', // set the menu icon
+  ));
 };
