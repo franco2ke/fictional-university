@@ -16,6 +16,58 @@ class WordCountAndTimePlugin
     // Add action hooks to execute the 'adminPage' and 'settings' functions
     add_action('admin_menu', array($this, 'adminPage')); // construct the admin options/settings page
     add_action('admin_init', array($this, 'settings')); // Initialize settings (create in db, frontend and link them)
+    add_filter('the_content', array($this, 'ifWrap')); // modify post data by adding the Word count, read time, etc
+  }
+
+
+  function ifWrap($content)
+  {
+    if (
+      is_main_query() && is_single() &&
+      (
+        get_option('wcp_wordcount', 1) ||
+        get_option('wcp_charactercount', '1') ||
+        get_option('wcp_readtime', '1')
+      )
+    ) {
+      return $this->createHTML($content);
+    }
+
+    return $content;
+  }
+
+  // Post the Statistics to the content
+  function createHTML($content)
+  {
+    $html = '<h3>' . esc_html(get_option('wcp_headline', 'Post Statistics')) . '</h3><p>';
+
+    // get word count once for the wordcount and to calculate read time
+    if (get_option('wcp_wordcount', '1') or get_option('wcp_readtime', '1')) {
+      $wordCount = str_word_count(strip_tags($content));
+    }
+
+    // add wordcount markup
+    if (get_option('wcp_wordcount', '1')) {
+      $html .= 'This post has ' . $wordCount . ' words.<br>';
+    }
+
+    // add character count markup
+    if (get_option('wcp_charactercount', '1')) {
+      $html .= 'This post has ' . strlen(strip_tags($content)) . ' characters.<br>';
+    }
+
+    // add read time markup
+    if (get_option('wcp_readtime', '1')) {
+      $html .= 'This post will take about ' . round($wordCount / 225) . ' minute(s) to read. <br>';
+    }
+
+    $html .= "</p>";
+
+    if (get_option('wcp_location', 0) == '0') {
+      return $html . $content;
+    }
+
+    return $content . $html;
   }
 
   // Function to define plugin settings
@@ -28,19 +80,21 @@ class WordCountAndTimePlugin
     // Add a settings field to the 'wcp_first_section' for the display location option
     // A plugin can have multiple settings pages hence why page slug required
     add_settings_field('wcp_location', 'Display Location', array($this, 'locationHTML'), 'word-count-settings-page', 'wcp_first_section');
-    // Register our setting named 'wcp_location' with the wordpress settings API
-    // so that $_POST & security handling is done for us and our callback function just has to echo the <input>
+    // Register our setting named 'wcp_location' with the wordpress settings API under an $option_group or they wont be saved and updated automatically
+    // Performs $_POST & security handling allowing values to be saved and retrieved : get_option()
     register_setting('wordcountplugin', 'wcp_location', array(
       'sanitize_callback' => array($this, 'sanitizeLocation'), // Sanitize callback function to ensure data security
       'default' => '0' // Default value for the setting
     ));
 
+
     // NOTE: Field 2: Headline Text
     // Add a settings field to the 'wcp_first_section' for the display location option
     // A plugin can have multiple settings pages hence why page slug required
     add_settings_field('wcp_headline', 'Headline Text', array($this, 'headlineHTML'), 'word-count-settings-page', 'wcp_first_section');
-    // Register our setting named 'wcp_location' with the wordpress settings API
-    // so that $_POST handling is done for us and our callback function just has to echo the <input>
+    // Register our setting named 'wcp_location' with the wordpress settings API under an $option_group or they wont be saved and updated automatically
+    // Performs $_POST & security handling allowing values to be saved and retrieved : get_option()
+    // ($option_group, label, array of callbacks)
     register_setting('wordcountplugin', 'wcp_headline', array(
       'sanitize_callback' => 'sanitize_text_field', // Sanitize callback function to ensure data security
       'default' => 'Post Statistics' // Default value for the setting
@@ -97,7 +151,9 @@ class WordCountAndTimePlugin
   // Function to create the plugin's admin page
   function adminPage()
   {
-    // Add an options page to the WordPress admin menu with the specified title, capability, slug, and callback function
+    // Add a submenu page to the WordPress settings menu in the admin dashboard. 
+    // With the specified page_title, menu_title, capability, slug, and callback function
+    // alternatives: add_submenu_page(), add_menu_page()
     add_options_page('Word Count Settings', 'Word Count', 'manage_options', 'word-count-settings-page', array($this, 'ourHTML'));
   }
 
@@ -110,10 +166,11 @@ class WordCountAndTimePlugin
       <!-- Form for plugin settings -->
       <form action="options.php" method="POST">
         <?php
-        // display hidden fields and handle security of your options form (nonce) + name option group
+        // display hidden fields and handle security of your options form (nonce)
+        // define an option group name for the settings: $option_group
         settings_fields('wordcountplugin');
 
-        // Output settings sections and fields registered with the WordPress settings API
+        // Print out all sections and fields added to the given settings page & registered with the WordPress settings API
         do_settings_sections('word-count-settings-page');
 
         // Output submit button
